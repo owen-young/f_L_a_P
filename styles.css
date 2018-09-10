@@ -1,0 +1,66 @@
+html {
+	background-color:black;
+}
+
+#output {
+	width:75vh;
+	height:33vh;
+    background-color:#D6D6D6;
+    word-wrap: break-word;
+    font-family:'vcr';
+    text-align: center;
+}
+
+#choice {
+	margin-top:10px;
+	width:75vh;
+	height:40vh;
+	background-color:#D6D6D6;
+	word-wrap: break-word;
+	font-family:'vcr';
+	text-align: center;
+}
+
+#input_text {
+	width:75vh;
+	height:21.5vh;
+	background-color:#D6D6D6;
+	margin-top:10px;
+
+}
+
+#input-textbox {
+	top: 50%;
+    left: 50%;
+    margin-top:4.5vh;
+    margin-left:10.5vh;
+    width:500px;
+    height:120px;
+    font-size:50px;
+    font-family:'vcr';
+}
+
+@font-face {
+    font-family: 'vcr';
+    src: url('VCR_OSD_MONO_1.001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#container {
+	float:right;
+	position:absolute;
+   	top:0;
+   	right:0;
+	width:1160px;
+	height:922px;
+	background-color:#D6D6D6;
+	margin-top:8px;
+	margin-right:16px;
+}
+
+#image {
+   	max-width:100%; 
+	height:auto;
+}
+

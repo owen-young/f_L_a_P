@@ -1,0 +1,74 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class matrix
+{
+    public static int rowsA = 0;
+    public static int rowsB = 0;
+    public static int colsA = 0;
+    public static int colsB = 0;
+    public static int[][] matrixC = new int[rowsA][rowsB];
+   public static void main(String[] args)
+   {
+       Scanner in = new Scanner(System.in);
+      
+       System.out.println("Enter the dimensions of matrix A:");
+       System.out.print("Rows of matrix A: ");
+       rowsA = in.nextInt();
+       System.out.print("Columns of matrix A: ");
+       colsA = in.nextInt();
+       
+       System.out.println("Enter the dimensions of matrix B:");
+       System.out.print("Rows of matrix B: ");
+       rowsA = in.nextInt();
+       System.out.print("Columns of matrix B: ");
+       colsA = in.nextInt();
+       
+       int matrixA[][] = new int[rowsA][colsA];
+       int matrixB[][] = new int[rowsB][colsB];
+       
+       //input elements for matrixA
+       for(int row=0; row<rowsA; row++)
+       {
+           for(int col=0; col<colsA; col++)
+           {
+               System.out.println("Enter values into matrix A");
+               matrixA[row][col]=in.nextInt();
+           }
+       }
+       
+      
+       //input elements for matrixB
+       for(int row=0; row<rowsB; row++)
+       {
+           for(int col=0; col<colsB; col++)
+           {
+               System.out.println("Enter values into matrix B");
+               matrixB[row][col]=in.nextInt();
+           }
+       }
+       
+       //add matrices together
+       addMatrix(matrixA, matrixB);
+       //print results (matrixC)
+       printMatrix(matrixC);
+       
+   }
+   public static void printMatrix(int[][] matrix)
+   {
+       for (int[] row : matrix)
+       {
+        System.out.println(Arrays.toString(row));
+       }
+   }
+   
+   public static void addMatrix(int[][] matrix1, int[][] matrix2)
+   {
+       for (int i=0; i < matrix1.length; i++)
+      {
+          for (int j=0; j < matrix1[0].length; j++)
+          {
+              matrixC[i][j] = matrix1[i][j] + matrix2[i][j];
+          }
+      }
+   }
+}
